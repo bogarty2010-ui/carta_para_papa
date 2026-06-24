@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día, Papá</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="welcome-screen" class="screen-overlay">
+        <div class="welcome-content">
+            <div class="mustache-icon"></div>
+            <button id="btn-open" class="gold-button">TOCA PARA ABRIR</button>
+        </div>
+    </div>
+
+    <main id="main-content" class="card-container hidden">
+        
+        <header class="card-header">
+            <div class="image-frame">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600" alt="Papá e Hijo">
+            </div>
+            <h1 class="gold-title">Feliz Día, Papá</h1>
+        </header>
+
+        <section class="audio-player">
+            <div class="player-info">
+                <span class="share-icon">⚙️</span>
+                <div class="track-details">
+                    <h3>TE DEDICO ESTA CANCIÓN</h3>
+                    <p>✦ Con amor</p>
+                </div>
+                <span id="current-time">0:00</span>
+            </div>
+            
+            <div class="progress-container">
+                <input type="range" id="progress-bar" value="0" max="100">
+            </div>
+
+            <div class="player-controls">
+                <button class="control-btn secondary">⏮</button>
+                <button id="btn-play-pause" class="control-btn main-play">▶</button>
+                <button class="control-btn secondary">⏭</button>
+            </div>
+
+            <audio id="audio-track" src="mi_viejo.mp3"></audio>
+        </section>
+
+        <div class="star-separator">✦ <span>✦</span> ✦</div>
+
+        <section class="dedication-content">
+            <h2>Una dedicatoria para ti</h2>
+            
+            <div class="message-box">
+                <div class="box-mustache"></div>
+                <p>Papá, hay palabras que no alcanzan para describir todo lo que eres. Eres el ejemplo que seguí cuando aprendí a caminar por la vida, la mano firme que me dio fuerzas cuando dudé, y la voz que siempre supo decir lo justo en el momento exacto.</p>
+                <p>Tu fortaleza es mi refugio. Tu presencia, mi certeza. Hoy, en este día tan especial, quiero que sepas que eres y siempre serás el pilar más grande de mi vida.</p>
+                <p>Gracias por estar. Gracias por guiarme. Gracias por ser mi papá.</p>
+                
+                <div class="line-art">
+                    <img src="https://img.icons8.com/ios/100/ffffff/family.png" alt="Icono Familia" class="inverted-icon">
+                </div>
+                <p class="signature">Con mucho amor</p>
+            </div>
+
+            <div class="star-separator">✦ <span>✦</span> ✦</div>
+            <h2>Para el mejor papá</h2>
+            <div class="poster-container">
+                <div class="poster-badge">
+                    <div class="stars">⭐⭐⭐</div>
+                    <h3>EL MEJOR PAPA</h3>
+                    <p>DEL MUNDO</p>
+                    <small>✦ Feliz día papá ✦</small>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
